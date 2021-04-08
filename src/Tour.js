@@ -9,8 +9,8 @@ const Tour = ({ tour }) => {
       <img className="img" src={image}></img>
       <div className="footerDiv">
         <div className="articleDesc">
-          <p>{name}</p>
-          <p>{price}</p>
+          <p className="name">{name}</p>
+          <p className="price">${price}</p>
         </div>
         <p>{info}</p>
         <button className="btn">Not interested</button>

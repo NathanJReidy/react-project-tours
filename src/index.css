@@ -87,6 +87,68 @@ section {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 50%;
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 3rem;
+  border-radius: 1.5rem;
+  background: white;
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.footerDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+}
+
+.articleDesc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.price {
+  color: rgb(100, 124, 202);
+  font-weight: bold;
+  background: rgb(195, 218, 235);
+  padding: 0.35rem;
+  border-radius: 0.5rem;
+}
+
+.btn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: red 1px solid;
+  color: red;
+  font-weight: bold;
+  background: inherit;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+  border: grey 1px solid;
+  cursor: pointer;
 }
