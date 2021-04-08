@@ -5,6 +5,13 @@ import Tours from "./Tours";
 const url = "https://course-api.com/react-tours-project";
 
 function App() {
+  const [tours, setTours] = useState([]);
+
+  useEffect(() => {
+    fetch(url).then((resp) => resp.json().then((data) => setTours(data)));
+    // console.log(`tours is ${tours}`);
+  }, []);
+
   return (
     <main>
       <section className="section">
@@ -13,19 +20,7 @@ function App() {
           <h2>Our Tours</h2>
         </div>
 
-        <div className="allArticles">
-          <article className="article">
-            <img className="img"></img>
-            <div className="footerDiv">
-              <div className="articleDesc">
-                <p>Best of Paris In 7 Days Tour</p>
-                <p>$1,995</p>
-              </div>
-              <p></p>
-              <button className="btn">Not interested</button>
-            </div>
-          </article>
-        </div>
+        <Tours tours={tours} />
       </section>
     </main>
   );
