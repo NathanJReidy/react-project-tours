@@ -6,13 +6,13 @@ const Tour = ({ tour }) => {
 
   return (
     <article className="article">
-      <img className="img"></img>
+      <img className="img" src={image}></img>
       <div className="footerDiv">
         <div className="articleDesc">
-          <p>Best of Paris In 7 Days Tour</p>
-          <p>$1,995</p>
+          <p>{name}</p>
+          <p>{price}</p>
         </div>
-        <p></p>
+        <p>{info}</p>
         <button className="btn">Not interested</button>
       </div>
     </article>
