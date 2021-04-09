@@ -12,7 +12,7 @@ const Tour = ({ tour }) => {
           <p className="name">{name}</p>
           <p className="price">${price}</p>
         </div>
-        <p>{info}</p>
+        <p className="info">{info}</p>
         <button className="btn">Not interested</button>
       </div>
     </article>

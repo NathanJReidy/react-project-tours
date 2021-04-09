@@ -108,7 +108,8 @@ section {
   height: 20rem;
   width: 100%;
   object-fit: cover;
-  border-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
 }
 
 .footerDiv {
@@ -135,6 +136,11 @@ section {
   background: rgb(195, 218, 235);
   padding: 0.35rem;
   border-radius: 0.5rem;
+}
+
+.info {
+  color: grey;
+  margin-bottom: 2rem;
 }
 
 .btn {
