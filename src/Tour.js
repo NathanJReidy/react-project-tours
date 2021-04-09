@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 
 const Tour = ({ tour, setTours, tours, setTitle }) => {
   //   console.log(tour);
+  const [readText, setReadText] = useState("... Read More");
+  const [readMore, setReadMore] = useState(true);
+
   const { id, image, info, name, price } = tour;
 
   const removeArticle = (id) => {
@@ -28,7 +31,23 @@ const Tour = ({ tour, setTours, tours, setTitle }) => {
           <p className="name">{name}</p>
           <p className="price">${price}</p>
         </div>
-        <p className="info">{info}</p>
+        <p className="info">
+          {readMore ? info.slice(0, 200) : info}
+          <a
+            className="link"
+            onClick={() => {
+              setReadMore(!readMore);
+              if (readText == "... Read More") {
+                setReadText("... Read Less");
+              } else {
+                setReadText("... Read More");
+              }
+            }}
+          >
+            {readText}
+          </a>
+        </p>
+
         <button className="btn" onClick={() => removeArticle(id)}>
           Not interested
         </button>

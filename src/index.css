@@ -158,3 +158,11 @@ section {
   border: grey 1px solid;
   cursor: pointer;
 }
+
+.link {
+  color: rgb(104, 173, 230);
+}
+
+.link:hover {
+  cursor: pointer;
+}
