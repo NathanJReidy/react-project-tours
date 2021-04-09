@@ -23,6 +23,11 @@ function App() {
       <section className="section">
         <div className="title">
           <h2>{isLoading ? <Loading /> : title}</h2>
+          {tours.length === 0 && isLoading === false && (
+            <button className="btn" onClick={() => window.location.reload()}>
+              Refresh
+            </button>
+          )}
         </div>
 
         <Tours tours={tours} setTours={setTours} setTitle={setTitle} />
