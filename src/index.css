@@ -92,6 +92,14 @@ section {
   margin-bottom: 5rem;
 }
 
+@media (max-width: 1000px) {
+  section {
+    width: 85%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
 .article {
   display: flex;
   flex-direction: column;
@@ -165,4 +173,11 @@ section {
 
 .link:hover {
   cursor: pointer;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
 }
