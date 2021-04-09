@@ -6,10 +6,15 @@ const url = "https://course-api.com/react-tours-project";
 
 function App() {
   const [tours, setTours] = useState([]);
-  const [title, setTitle] = useState("Our Tours");
+  const [title, setTitle] = useState("Is Loading...");
 
   useEffect(() => {
-    fetch(url).then((resp) => resp.json().then((data) => setTours(data)));
+    fetch(url).then((resp) =>
+      resp.json().then((data) => {
+        setTours(data);
+        setTitle("Our Tours");
+      })
+    );
     // console.log(`tours is ${tours}`);
   }, []);
 
@@ -17,7 +22,7 @@ function App() {
     <main>
       <section className="section">
         <div className="title">
-          <Loading />
+          {/* <Loading /> */}
           <h2>{title}</h2>
         </div>
 
