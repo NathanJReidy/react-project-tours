@@ -20,7 +20,7 @@ function App() {
           <h2>Our Tours</h2>
         </div>
 
-        <Tours tours={tours} />
+        <Tours tours={tours} setTours={setTours} />
       </section>
     </main>
   );

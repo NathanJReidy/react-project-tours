@@ -1,6 +1,6 @@
 import React from "react";
 import Tour from "./Tour";
-const Tours = ({ tours }) => {
+const Tours = ({ tours, setTours }) => {
   //   console.log(tours);
 
   return (
@@ -8,7 +8,9 @@ const Tours = ({ tours }) => {
       <div className="allArticles">
         {tours.map((tour) => {
           //   const { id, image, info, name, price } = tour;
-          return <Tour key={tour.id} tour={tour} />;
+          return (
+            <Tour key={tour.id} tour={tour} setTours={setTours} tours={tours} />
+          );
         })}
       </div>
     </>
