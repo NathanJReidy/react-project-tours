@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-project-tours/static/css/main.c8da1787.chunk.css",
+    "main.js": "/react-project-tours/static/js/main.f1f805b9.chunk.js",
+    "main.js.map": "/react-project-tours/static/js/main.f1f805b9.chunk.js.map",
+    "runtime-main.js": "/react-project-tours/static/js/runtime-main.917952ad.js",
+    "runtime-main.js.map": "/react-project-tours/static/js/runtime-main.917952ad.js.map",
+    "static/js/2.d5657cd7.chunk.js": "/react-project-tours/static/js/2.d5657cd7.chunk.js",
+    "static/js/2.d5657cd7.chunk.js.map": "/react-project-tours/static/js/2.d5657cd7.chunk.js.map",
+    "index.html": "/react-project-tours/index.html",
+    "static/css/main.c8da1787.chunk.css.map": "/react-project-tours/static/css/main.c8da1787.chunk.css.map",
+    "static/js/2.d5657cd7.chunk.js.LICENSE.txt": "/react-project-tours/static/js/2.d5657cd7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.917952ad.js",
+    "static/js/2.d5657cd7.chunk.js",
+    "static/css/main.c8da1787.chunk.css",
+    "static/js/main.f1f805b9.chunk.js"
+  ]
+}
