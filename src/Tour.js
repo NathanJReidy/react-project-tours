@@ -1,27 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-const Tour = ({ tour, setTours, tours, setTitle }) => {
-  //   console.log(tour);
-  const [readText, setReadText] = useState("... Read More");
+const Tour = ({ tour, removeTour }) => {
   const [readMore, setReadMore] = useState(true);
-
   const { id, image, info, name, price } = tour;
-
-  const removeArticle = (id) => {
-    const newArticles = tours.filter((tour) => tour.id !== id);
-    setTours(newArticles);
-    // console.log(newArticles.length);
-    if (newArticles.length === 0) {
-      setTitle("No Tours Left");
-    }
-  };
-
-  // useEffect(() => {
-  //   // console.log(newArticles.length);
-  //   if (newArticles.length === 0) {
-  //     setTitle("No Tours Left");
-  //   }
-  // });
 
   return (
     <article className="article">
@@ -37,18 +18,13 @@ const Tour = ({ tour, setTours, tours, setTitle }) => {
             className="link"
             onClick={() => {
               setReadMore(!readMore);
-              if (readText == "... Read More") {
-                setReadText("... Read Less");
-              } else {
-                setReadText("... Read More");
-              }
             }}
           >
-            {readText}
+            {readMore ? "... Read More" : "... Read Less"}
           </a>
         </p>
 
-        <button className="btn" onClick={() => removeArticle(id)}>
+        <button className="btn" onClick={() => removeTour(id)}>
           Not interested
         </button>
       </div>
